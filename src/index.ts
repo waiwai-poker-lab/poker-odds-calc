@@ -18,3 +18,9 @@ export class Omaha extends Table {
     super("omaha");
   }
 }
+
+export class FiveCardOmaha extends Table {
+  constructor() {
+    super("fivecard_omaha");
+  }
+}
