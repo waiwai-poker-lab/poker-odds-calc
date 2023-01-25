@@ -17,6 +17,8 @@ export default class Player {
       throw new Error("A Texas hold'em hand must contain exactly 2 cards!");
     if (game.isOmaha() && hand.length !== 4)
       throw new Error("An Omaha hand must contain exactly 4 cards!");
+    if (game.is5CardOmaha() && hand.length !== 5)
+      throw new Error("An 5card Omaha hand must contain exactly 5 cards!");
     this.hand = hand.map(c => {
       const card = this.Table.getDeck().getCards().find(card => card.toString() === c) as Card;
       if (!card)
