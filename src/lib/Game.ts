@@ -29,6 +29,10 @@ export default class Game {
     return this.game == "fivecard_omaha";
   }
 
+  isSuperHoldem() {
+    return this.game == "super_holdem";
+  }
+
   getGame() {
     return this.game;
   }
