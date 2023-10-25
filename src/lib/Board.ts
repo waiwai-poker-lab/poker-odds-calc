@@ -14,7 +14,12 @@ export default class Board {
   }
 
   private checkGameRules(action: string) {
-    if (this.getGame().isTexasHoldem() || this.getGame().isSixPlusTexasHoldem() || this.getGame().isOmaha() || this.getGame().is5CardOmaha()) {
+    const isFlopGame = this.getGame().isTexasHoldem()
+      || this.getGame().isSixPlusTexasHoldem()
+      || this.getGame().isOmaha()
+      || this.getGame().is5CardOmaha()
+      || this.getGame().isSuperHoldem()
+    if (isFlopGame) {
       if (
         (action === "flop" && this.cards.length !== 0)
         || (action === "turn" && this.cards.length !== 3)

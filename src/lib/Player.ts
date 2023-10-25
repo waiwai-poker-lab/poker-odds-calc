@@ -15,6 +15,8 @@ export default class Player {
     const game = this.Table.getGame();
     if ((game.isTexasHoldem() || game.isSixPlusTexasHoldem()) && hand.length !== 2)
       throw new Error("A Texas hold'em hand must contain exactly 2 cards!");
+    if (game.isSuperHoldem() && hand.length !== 3)
+      throw new Error("A Super hold'em hand must contain exactly 3 cards!");
     if (game.isOmaha() && hand.length !== 4)
       throw new Error("An Omaha hand must contain exactly 4 cards!");
     if (game.is5CardOmaha() && hand.length !== 5)

@@ -1,8 +1,8 @@
-export type Games = "texas_holdem" | "sixplus_holdem" | "omaha" | "fivecard_omaha";
-export type IHand = [string, string] | [string, string, string, string] | [string, string, string, string, string];
+export type Games = "texas_holdem" | "sixplus_holdem" | "omaha" | "fivecard_omaha" | "super_holdem";
+export type IHand = [string, string] | [string, string, string, string] | [string, string, string, string, string] | [string, string, string];
 export type ISuit = Suits.CLUBS | Suits.SPADES | Suits.HEARTS | Suits.DIAMONDS;
 export type Nullable<T> = T | null;
-export const AvailableGames = ["texas_holdem", "sixplus_holdem", "omaha", "fivecard_omaha"];
+export const AvailableGames = ["texas_holdem", "sixplus_holdem", "omaha", "fivecard_omaha", "super_holdem"];
 
 export enum Suits {
   HEARTS = "h",

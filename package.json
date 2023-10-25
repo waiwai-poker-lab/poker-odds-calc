@@ -1,6 +1,6 @@
 {
   "name": "@waiwai-poker-lab/poker-odds-calc",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Fastest and most accurate node module for calculating odds of poker games Texas Hold'em, Texas Shortdeck/Sixplus and Omaha.",
   "license": "MIT",
   "dependencies": {
@@ -45,6 +45,7 @@
     "six plus texas hold'em",
     "omaha",
     "omaha hi",
+    "super hold'em",
     "hand equity",
     "equity"
   ],
